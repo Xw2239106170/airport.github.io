@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: #050505;
+    display: inline-block;
+
+}
+ul,li{
+    float: left;
+    list-style: none;
+}
+/* 使得版心居中 */
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+.wrapper2{
+    margin: 0 auto;
+    width: 1200px;
+}
+/* 大标签，包含下面的小标签 */
+.head{
+    height: 42px;
+    background-color: white;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    margin: 30px auto;
+}
+h1{
+    float: left;
+}
+/* 导航标签的盒子 */
+.title{
+    float: left;
+    
+    margin-left: 70px; ;
+    height: 42px;
+}
+/* 对标签进行布局 */
+.title ul li a{
+    line-height: 42px;
+    padding: 0 9px;
+    font-size: 18px;
+}
+.title ul li:hover{
+    border-bottom: 2px solid skyblue;
+
+}
+/* 文本标签框 */
+.nav{
+    float: left;
+
+    height: 42px;
+    background-color: skyblue;
+    margin-left: 50px;
+}
+.tow{
+    float: left;
+
+    padding-left: 29px;
+    width: 412px;
+	height: 40px;
+	border: solid 1px #00a4ff;
+}
+.three{
+    float: left;
+    margin-left: 1px;
+}
+/* 个人中心的布局 */
+.three a{
+    float: left;
+    line-height: 42px;
+    width: 61px;
+	height: 12px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 1px;
+	color: #666666;
+}
+.four{
+    float: left;
+
+    height: 42px;
+    margin-left: 32px;
+
+    display: flex;
+    justify-content: center; /* 水平方向居中 */
+    align-items: center; /* 垂直方向居中 */
+    /* 如果图片宽度超过容器宽度，可以设置图片的最大宽度以防止溢出 */
+    max-width: 100%;
+      
+}
+
+.five{
+    float: left;
+    height: 42px;
+    margin-left: 35px;
+
+    display: flex;
+    justify-content: center; /*水平方向居中*/
+    align-items: center;/*垂直方向居中*/
+    /* 如果图片宽度超过容器宽度，可以设置图片的最大宽度以防止溢出 */
+    max-width: 100%;
+    /* vertical-align: middle; */
+}
+.five a{
+
+    width: 81px;
+	height: 14px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 1px;
+	color: #666666;
+    display: flex;
+    justify-content: center; /* 水平方向居中 */
+    align-items: center; /* 垂直方向居中 */
+    /* 如果图片宽度超过容器宽度，可以设置图片的最大宽度以防止溢出 */
+    max-width: 100%;
+}
+
+/* 第二个大标签 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .wrapper{
+
+    height: 420px;
+    width: 1200px;
+    background: skyblue;
+    background-image: url("../images/banner2.png");
+}
+.banner .wrapper .right{
+    float: right;
+
+    margin-top: 50px;
+    height: 320px;
+    width: 288px;
+    background-color: #fff;
+}
+/* 我的课程小标题 */
+.right .ten{
+
+    line-height: 48px;
+    text-align: center;
+    /* width: 288px; */
+    height: 48px;
+    background-color: #9bceea;
+}
+.ten h2{
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 18px;
+	color: #ffffff;
+}
+/* 包含课程下的大盒子 */
+.subtitle{
+    height: 271px;
+    border: 1px solid #eaeaea;
+}
+/* 第一个课程标签 */
+.id{
+    float: left;
+    margin: 10px 46px 10px 19px;
+    height: 55px;
+    width: 231px;
+    border-bottom: 1px solid #efefef;
+}
+.id span:nth-child(1){
+    width: 163px;
+	height: 33px;
+	font-family: FZLTCXHJW--GB1-0;
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #4e4e4e;
+}
+.id span:nth-child(2){
+    font-family: FZLTCXHJW--GB1-0;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #4e4e4e;
+}
+.id span:nth-child(3){
+    font-family: FZLTCXHJW--GB1-0;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #a5a5a5;
+}
+.id a :hover{
+    color: #00a4ff;
+}
+/* 第二个课程标签 */
+.shearing{
+    float: left;
+    margin: 0 46px 10px 19px;
+    height: 55px;
+    width: 231px;
+    border-bottom: 1px solid #efefef;
+}
+.shearing span:nth-child(1){
+    width: 163px;
+	height: 33px;
+	font-family: FZLTCXHJW--GB1-0;
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #4e4e4e;
+}
+.shearing span:nth-child(2){
+    font-family: FZLTCXHJW--GB1-0;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #4e4e4e;
+}
+.shearing span:nth-child(3){
+    font-family: FZLTCXHJW--GB1-0;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #a5a5a5;
+}
+.shearing a :hover{
+    color: #00a4ff;
+}
+/* 三级标签 */
+.category{
+    float: left;
+    margin: 0 46px 10px 19px;
+    height: 55px;
+    width: 231px;
+    border-bottom: 1px solid #efefef;
+}
+.category span:nth-child(1){
+    width: 163px;
+	height: 33px;
+	font-family: FZLTCXHJW--GB1-0;
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #4e4e4e;
+}
+.category span:nth-child(2){
+    font-family: FZLTCXHJW--GB1-0;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #4e4e4e;
+}
+.category span:nth-child(3){
+    font-family: FZLTCXHJW--GB1-0;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #a5a5a5;
+}
+.category a :hover{
+    color: #00a4ff;
+}
+/* 按钮标签 */
+.button{
+    /* float: left; */
+    overflow: hidden;
+    margin: 10px 47px 14px 47px;
+    height: 41px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+}
+.button a{
+
+    line-height: 41px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #00a4ff;
+}
+/* 因为没有加宽度，使用不存在会被挤下来的情况 */
+.banner .left{
+    float: left;
+    height: 420px;
+    width: 220px;
+    /* 0.3表示透明度 */
+    background-color: rgba(0,0,0,0.3);
+    padding: 0 20px;
+}
+/* 左标签的设计 */
+/* li就是里面大标签，a和span分别是左右标签 */
+.banner .left li{
+    line-height: 44px;
+    /* 用来设计垂直间距 */
+} 
+.left ul  li a{
+    text-align: left;
+    color: #fff;
+    width: 190px;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+}
+.left ul  li a span{
+    float: right;
+}
+.left ul  li a:hover{
+    color: #00a4ff;
+}
+/* 精品推荐 */
+.very{
+
+    margin-top: 10px;
+    height: 60px;
+    width: 1200px;
+    /* 盒子居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    /* 增加外投影 */
+    box-shadow: 0px 2px 3px 0px 
+        rgba(118, 118, 118, 0.2);
+    
+}
+.very .content{
+    height: 18px;
+    width: 1140px;
+    margin: 21px 26px 21px 34px;
+}
+/* 精品推荐 */
+.very .content .good{
+    float: left;
+    font-size: 16px;
+    height: 16px;
+    padding-right:40px;
+    /* width: 95px; */
+    /* 让字体居中 */
+    line-height: 16px;
+    font-weight: bold;
+    border-right: 1px solid #bfbfbe;
+    color: #00a4ff;
+}
+.very .content a{
+    display: block;
+}
+.very .content .beach{
+    
+    float: left; 
+    padding:0 40px;
+    font-size: 16px; 
+    height: 16px;  
+    width: 135px;
+    /* 让字体居中 */ 
+    line-height: 16px; 
+    border-right: 1px solid #bfbfbe;
+}
+.very .content .take{
+    
+    float: left; 
+    padding:0 40px;
+    font-size: 16px; 
+    height: 16px;  
+    width: 135px;
+    /* 让字体居中 */ 
+    line-height: 16px; 
+    border-right: 1px solid #bfbfbe;
+}
+.very .content .become{
+    
+    float: left; 
+    padding:0 40px;
+    font-size: 16px; 
+    height: 16px;  
+    width: 135px;
+    /* 让字体居中 */ 
+    line-height: 16px; 
+    border-right: 1px solid #bfbfbe;
+}
+.very .content .best{
+    
+    float: left; 
+    padding:0 40px;
+    font-size: 16px; 
+    height: 16px;  
+    width: 135px;
+    /* 让字体居中 */ 
+    line-height: 16px; 
+    border-right: 1px solid #bfbfbe;
+}
+.very .content .battle{
+    
+    float: left; 
+    padding:0 40px;
+    font-size: 16px; 
+    height: 16px;  
+    width: 135px;
+    /* 让字体居中 */ 
+    line-height: 16px; 
+    border-right: 1px solid #bfbfbe;
+}
+.very .content .go{
+    float: left;
+
+    height: 16px;
+    width: 330px;
+}
+.go .kettle{
+    float: left;
+
+    padding:0 40px;
+    font-size: 16px; 
+    line-height: 16px; 
+}
+.go .pot{
+    float: right;
+    line-height: 14px;
+    font-size: 14px;
+}
+.pot a{
+    color: #00a4ff;
+    font-family: MicrosoftYaHei;
+}
+/* 由于课程的多少却决于你数据库里面存有的课程是多少，所以在这里不方便加高度 */
+.goods{
+    /* width: 1200px; */
+    margin-top: 35px;
+}
+.goods .invest{
+    height: 40px;
+    width: 1200px;
+    /* background-color: pink; */
+}
+.invest a{
+    float: right;
+
+    line-height: 40px;
+	height: 11px;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #a5a5a5;
+    padding-right: 20px;
+}
+.invest h2{
+    float: left;
+
+    line-height: 40px;
+	font-family: MicrosoftYaHei;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #494949;
+}
+/* 课程图片 */
+.goods ul li{
+    margin-right: 15px;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-bottom: 15px;
+    /* background-color: pink; */
+    box-shadow: 0px 2px 5px 0px 
+        rgba(118, 118, 118, 0.5);
+}
+.goods ul li:nth-child(5n){
+    margin-right: 0;
+}
+.goods li img{
+    width: 228px;
+    height: 155px;
+}
+.goods li h3{
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 184px;
+	height: 32px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #050505;
+}
+
+.goods .people{
+
+    width: 184px;
+	height: 32px;
+    margin-top: 20px;
+    margin-left: 25px;
+    
+}
+.goods li span{
+    font-size: 12px;
+    color: #ff7c2d;
+    text-align: center;
+    line-height: 1.5; /* 设置行高，可以根据需要进行调整 */
+    position: relative; /* 设置相对定位，为了定位伪元素 */
+}
+
+.goods li .people .spot::after{
+    content: "·"; /* 伪元素内容，可以是任何字符或图标 */
+    position: absolute; /* 设置绝对定位，相对于父元素 .container */
+    top: 50%; /* 位于父元素的垂直中心位置 */
+    transform: translateY(-50%); /* 将伪元素的中心对齐到垂直中心位置 */
+    right: -10px; /* 从文字的左侧略微偏移，可以根据需要进行调整 */
+    font-size: 16px; /* 设置伪元素的字体大小，可以根据需要进行调整 */
+    line-height: 1; /* 重置伪元素的行高，确保其不占据额外的垂直空间 */
+    color: #bfbfbe;
+}
+.goods li .people .mount{
+    margin-left: 20px;
+    font-size: 12px;
+    color: #999999;
+}

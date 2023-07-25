@@ -5,7 +5,6 @@
 }
 .clearfix::before,
 .clearfix::after{
-    clear: both;
     content: "";
     display: table;
 }
@@ -446,6 +445,7 @@ h1{
 .goods{
     /* width: 1200px; */
     margin-top: 35px;
+    overflow: hidden;
 }
 .goods .invest{
     height: 40px;
@@ -539,3 +539,68 @@ h1{
     font-size: 12px;
     color: #999999;
 }
+
+.out{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.out .logo{
+    padding-left: 180px;
+    float: left;
+}
+.logo p{
+    margin-top: 15px;
+    width: 426px;
+	height: 30px;
+	font-family: SimSun;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #666666;
+}
+/* 下载app按钮 */
+.logo .load{
+
+    margin-top: 25px;
+    text-align: center;
+    line-height: 36px;
+    width: 120px;
+    height: 36px;
+    border: solid 1px #00a4ff;
+}
+
+.out .text{
+    float: right;
+    margin-right: 120px;
+    /* background-color: green; */
+}
+.out .text dl{
+    float: left;
+
+    margin-left: 120px;
+}
+.out .text dl dt{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 21px;
+	letter-spacing: 0px;
+	color: #333333;
+    margin-bottom: 15px;
+}
+.out .text dl dd {
+	font-family: SimSun;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #333333;
+}
+
+
